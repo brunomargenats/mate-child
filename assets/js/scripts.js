@@ -1,0 +1,1 @@
+/* Put all your scripts here. This file with load in footer */
