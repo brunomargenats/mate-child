@@ -9,20 +9,22 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 == Installation ==
 
-1. Copy config/config.php from Mate theme and paste it inside child theme. Then, edit the file if needed.
-2. You can edit all variables or just replace some variables from Mate theme:
-2a. All variables: Copy config/variables.css from Mate theme and paste it inside this child theme. Then, edit the file as needed.
-2b. Some variables: Copy the variables that you need to change (inside config/variables.css in Mate theme) ant paste them inside style.css of this child theme.
-3. Replace logo.svg inside assets/images/logo.svg. Don't forget to change --logo-width and --logo-height variables.
-4. Edit all theme info in style.css. Let "Template: mate" unchanged.
-5. Edit functions.php. Replace textdomain "mate_child" with the same textdomain you put in style.css.
-6. Load your custom JS and CSS files inside functions/custom-styles-scripts.php. Some scripts like jQuery can be enqueued directly in this file.
-7. For running your new scripts files or for some tiny functions, there's already a scripts.js in assets/js that you can edit. 
-8. If needed, all inline scripts and codes like google analytics, favicons, etc. usually are loaded in the head. Use template-parts/header/head-inline-scripts.php for that.
-9. If needed, all other inline scripts and codes that you can load in footer goes in template-parts/footer/inner-footer-content.php.
-10. Modify screenshot.png.
-11. Finally, try to copy as less files as possible from the parent theme. This will let you update it without problems.
-12. Enjoy!
+1. Rename the child theme folder with your brand name (in lowercase).
+2. Edit all theme info in style.css. Text Domain HAS to be the same name as your child theme folder. Let "Template: mate" unchanged.
+3. Modify screenshot.png.
+4. Activate your Child Theme.
+5. If your website logo became a question mark «?», congratulations, your Child Theme is working!
+6. Copy /config/ folder from Mate theme and paste it inside the Child Theme folder.
+7. Edit config/config.php only changing TRUE/FALSE variables.
+8. Edit config/variables.css values to reflect your brand colors and style.
+9. Replace logo.svg inside assets/images/logo.svg.
+10. Change --logo-width and --logo-height variables inside variables.css. This will control your logo area and will let all remaining space to your navigation.
+11. For adding new CSS, you can use the main style.css. For adding new scripts, you can use scripts.js in assets/js. Scripts will load on footer.
+12. All inline scripts and code that is usually loaded on <head></head> like google analytics, favicons, etc. goes in template-parts/header/head-inline-scripts.php
+13. All inline scripts and code that is usually loaded before </body> goes in template-parts/footer/inner-footer-content.php
+14. All JS and CSS files that we load through a function goes in functions/custom-styles-scripts.php. Some scripts like jQuery can be enqueued directly in this file.
+15. Finally, try to copy as few files as possible from the parent theme and the more specific the files the better. This will let you update the Mate Theme without any problems.
+16. Enjoy!
 
 == Licenses ==
 
@@ -36,6 +38,13 @@ Source: https://fonts.google.com/specimen/Open+Sans
 
 
 == Changelog ==
+
+Version 1.1
+-------------------------
+- Better installation instructions
+- Logo.svg is now different from parent theme.
+- Footer/inner-footer-content.php added.
+
 Version 1.0
 -------------------------
 - First release!

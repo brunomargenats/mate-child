@@ -4,8 +4,9 @@
 ------------------------------------------------ */
 
   function mate_child_theme_setup() {
-
-        load_child_theme_textdomain( 'mate_child', get_stylesheet_directory() . '/languages' );
+        $my_theme = wp_get_theme();
+        $textDomainChild = $my_theme->get( 'TextDomain' );
+        load_child_theme_textdomain( $textDomainChild, get_stylesheet_directory() . '/languages' );
 
     	  // Set content-width: Maximum allowed width for any content in the theme, like oEmbeds and images added to posts.
 		    global $content_width;
