@@ -8,7 +8,8 @@
         $textDomainChild = $my_theme->get( 'TextDomain' );
         load_child_theme_textdomain( $textDomainChild, get_stylesheet_directory() . '/languages' );
 
-    	  // Set content-width: Maximum allowed width for any content in the theme, like oEmbeds and images added to posts.
+        // Set content-width: Maximum allowed width for any content in the theme, like oEmbeds and images added to posts.
+        // I recommend to use the wrapper max-width on variables.css or, if you're using sidebars, the <main></main> max-width (Like, 8/12 of wrapper max-width)
 		    global $content_width;
         if ( ! isset( $content_width ) ) $content_width = 1200;
 

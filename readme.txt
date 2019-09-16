@@ -39,6 +39,11 @@ Source: https://fonts.google.com/specimen/Open+Sans
 
 == Changelog ==
 
+Version 1.2
+-------------------------
+- New « go to anchor » javascript function. Now working on IE.
+- Better instructions on functions.php
+
 Version 1.1
 -------------------------
 - Better installation instructions
