@@ -1,7 +1,7 @@
 === Mate ===
 Contributors: Bruno Margenats
 Requires at least: 5.2
-Tested up to: 5.2.2
+Tested up to: 5.3.2
 Stable tag: trunk
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -23,6 +23,7 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 12. All inline scripts and code that is usually loaded on <head></head> like google analytics, favicons, etc. goes in template-parts/header/head-inline-scripts.php
 13. All inline scripts and code that is usually loaded before </body> goes in template-parts/footer/inner-footer-content.php
 14. All JS and CSS files that we load through a function goes in functions/custom-styles-scripts.php. Some scripts like jQuery can be enqueued directly in this file.
+16. If you want to use some custom utility classes, don't forget to activate them on your config.php and copy the file mate/assets/css/utility-classes.css to your child theme before editing.
 15. Finally, try to copy as few files as possible from the parent theme and the more specific the files the better. This will let you update the Mate Theme without any problems.
 16. Enjoy!
 
@@ -38,6 +39,10 @@ Source: https://fonts.google.com/specimen/Open+Sans
 
 
 == Changelog ==
+
+Version 1.2.1
+-------------------------
+- Instructions for utility classes added
 
 Version 1.2
 -------------------------
