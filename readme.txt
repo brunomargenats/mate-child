@@ -1,4 +1,4 @@
-=== Mate ===
+=== Mate Child Theme ===
 Contributors: Bruno Margenats
 Requires at least: 5.2
 Tested up to: 5.3.2
@@ -13,7 +13,7 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 2. Edit all theme info in style.css. Text Domain HAS to be the same name as your child theme folder. Let "Template: mate" unchanged.
 3. Modify screenshot.png.
 4. Activate your Child Theme.
-5. If your website logo became a question mark «?», congratulations, your Child Theme is working!
+5. If your website logo became a question mark "?", congratulations, your Child Theme is working!
 6. Copy /config/ folder from Mate theme and paste it inside the Child Theme folder.
 7. Edit config/config.php only changing TRUE/FALSE variables.
 8. Edit config/variables.css values to reflect your brand colors and style.
@@ -27,7 +27,7 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 15. Finally, try to copy as few files as possible from the parent theme and the more specific the files the better. This will let you update the Mate Theme without any problems.
 16. Enjoy!
 
-== Licenses ==
+== Licenses (From Mate theme) ==
 
 Barlow
 License: Open Font License
@@ -37,8 +37,35 @@ Open Sans
 License: Open Font License
 Source: https://fonts.google.com/specimen/Open+Sans
 
+Responsive nav
+License: MIT License
+Source: https://github.com/samikeijonen/responsive-nav.js/tree/dropdowns
+
+Reflex Grid (modified on this theme)
+License: MIT License
+Source: https://github.com/leejordan/reflex/
+
+Smooth Scroll
+License: MIT License
+Source: https://github.com/cferdinandi/smooth-scroll/
+
+CSS Vars Ponyfill
+License: MIT License
+Source: https://jhildenbiddle.github.io/css-vars-ponyfill/
+
 
 == Changelog ==
+
+Version 1.2.3 (based on mate 0.6.8)
+-------------------------
+- Updated: scripts.js
+- Updated: inner-footer-content.php
+- Updated: head-inline-scripts.php
+
+Version 1.2.2
+-------------------------
+- smooth-scroll script updated from v16.1.0 to v16.1.2
+- Theme license changed.
 
 Version 1.2.1
 -------------------------
